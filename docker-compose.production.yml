@@ -1,9 +1,11 @@
-php:
-  ports:
-    - 8989:80
-mysqldb:
-  ports:
-    - 3307:3306
-phpmyadmin:
-  ports:
-    - 8181:80
+version: "3.1"
+services:
+  php:
+    ports:
+      - 8989:80
+  mysqldb:
+    ports:
+      - 3307:3306
+  phpmyadmin:
+    ports:
+      - 8181:80
