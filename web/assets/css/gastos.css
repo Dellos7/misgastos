@@ -1,0 +1,87 @@
+.ultimos-gastos{
+    margin: 2rem;
+}
+
+.ultimos-gastos__title{
+    position: relative;
+}
+
+.ultimos-gastos__title-add{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ultimos-gastos__suma{
+    margin: 1rem;
+    position: relative;
+    text-align: right;
+}
+
+.ultimos-gastos__gasto{
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px -2px black;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.ultimos-gastos__gasto-nombre{
+    font-weight: bold;
+}
+
+.ultimos-gastos__gasto-coste{
+    position: absolute;
+    right: 1rem;
+    top: 10%;
+}
+
+.ultimos-gastos__gasto-fecha{
+    position: absolute;
+    right: 1rem;
+    bottom: 10%;
+}
+
+.add-gasto{
+    margin: 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-gasto__title{
+
+    margin-right: auto;
+}
+
+.add-gasto__title h2{
+}
+
+.add-gasto__form{
+    display: grid;
+    grid-template-columns: repeat( 2, minmax( 10rem, 20rem ) );
+    grid-auto-rows: minmax( 3rem, auto );
+    align-items: center;
+    margin: 1rem;
+    row-gap: 1.5rem;
+}
+
+.add-gasto__form-item{
+    height: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 1.5rem;
+}
+
+.add-gasto__form-item--name{
+    font-weight: bold;
+}
+
+.add-gasto__form-item--value{
+
+}
+
+.add-gasto__form-item--value__coste::after{
+    content: "€";
+}

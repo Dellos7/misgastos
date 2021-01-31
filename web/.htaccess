@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    ErrorDocument 404 error/404.php
+    ErrorDocument 403 error/403.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+    RewriteRule ^(.*) index.php?request=$1
+</IfModule>

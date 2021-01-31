@@ -1,0 +1,192 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    --color-blanco: #ffffff;
+    --color-azul-1: #2196f3;
+    --color-azul-2: #0367B4;
+}
+
+body{
+    font-size: 1.5rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.nav .nav__logo{
+    margin: .5rem;
+    flex: 1 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.nav__logo--text{
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav ul{
+    flex: 2 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: .5rem;
+}
+
+.nav ul li{
+    margin: 0 1rem;
+}
+
+.nav__session-info{
+    margin: .5rem;
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__session-info--user{
+    margin: 0 .5rem;
+}
+
+.nav__session-info--logout{
+    margin: 0 .5rem;
+}
+
+.nav__session-info--logout button{
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.header h1{
+    text-align: center;
+}
+
+.login-form{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 90%;
+}
+
+.login-form__input{
+    margin: .5rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-form__button{
+    font-size: 1.5rem;
+    padding: .5rem 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.profile-info__title{
+    margin: 2rem;
+    margin-right: auto;
+}
+
+.profile-info__title h2{
+}
+
+.profile-info__info{
+    display: grid;
+    grid-template-columns: repeat( 2, minmax( 10rem, 20rem ) );
+    grid-auto-rows: minmax( 3rem, auto );
+    align-items: center;
+    margin: 1rem;
+    row-gap: 1.5rem;
+}
+
+.profile-info__info--item{
+    height: 100%;
+    position: relative;
+    border-bottom: 2px solid black;
+    padding-bottom: 1.5rem;
+}
+
+.profile-info__info--item-name{
+    font-weight: bold;
+}
+
+.profile-info__info--item-value{
+    
+}
+
+.profile-info__edit-btn{
+    margin: 1rem;
+}
+
+.boton1{
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--color-azul-1);
+    color: var(--color-blanco);
+    border: none;
+    -webkit-box-shadow: 1px 3px 6px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 6px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 6px -1px rgba(0,0,0,0.75);
+}
+
+.boton1__secundario{
+    background-color: var(--color-azul-2);
+}
+
+.boton1-grande{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+.error-alert{
+    width: 70%;
+    text-align: center;
+    padding: 2rem;
+    border: 1rem solid red;
+    font-size: 1.8rem;
+    margin: 1.5rem auto;
+}
+
+.success-alert{
+    width: 70%;
+    text-align: center;
+    padding: 2rem;
+    border: 1rem solid greenyellow;
+    font-size: 1.8rem;
+    margin: 1.5rem auto;
+}
