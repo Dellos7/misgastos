@@ -2,7 +2,7 @@ version: "3.1"
 services:
   php:
     ports:
-      - 8888:80
+      - 8989:80
   mysqldb:
     ports:
       - 3307:3306
