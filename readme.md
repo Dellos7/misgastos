@@ -5,7 +5,7 @@
 Lanzar con Docker en desarrollo:
 
 ```
-docker-compose -f docker-compose.yml up --build
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
 ```
 
 ## Producción

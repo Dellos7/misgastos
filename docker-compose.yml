@@ -3,8 +3,8 @@ services:
   php:
     build: .
     container_name: misgastos_apache-php
-    ports:
-      - 80:80
+    #ports:
+    #  - 80:80
     # Las carga del fichero .env
     environment:
       - MYSQL_DATABASE=${MYSQL_DATABASE}
@@ -29,5 +29,5 @@ services:
     container_name: misgastos_phpmyadmin
     environment:
       - PMA_HOST=${MYSQL_HOST}
-    ports:
-      - 8080:80
+    #ports:
+    #  - 8080:80
